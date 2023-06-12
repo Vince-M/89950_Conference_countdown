@@ -1,0 +1,27 @@
+@use '../util' as *;
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+
+h2 {
+  font-size: rem(56);
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: rem(36);
+  font-family: var(--font-display);
+  font-weight: 700;
+}

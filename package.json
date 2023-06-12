@@ -1,0 +1,19 @@
+{
+  "name": "89950_conference_countdown",
+  "version": "1.0.0",
+  "description": "2023 NWC Wintering Partners Gathering countdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vince-M/89950_Conference_countdown.git"
+  },
+  "author": "Vince Mendella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vince-M/89950_Conference_countdown/issues"
+  },
+  "homepage": "https://github.com/Vince-M/89950_Conference_countdown#readme"
+}

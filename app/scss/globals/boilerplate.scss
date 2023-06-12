@@ -1,0 +1,48 @@
+@use '../util' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  line-height: 1;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/countdown_bkgd_1920x1080-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 rem(10);
+}
+
+.wpgLogo {
+  margin-bottom: rem(20);
+
+  @include breakpoint-down(small) {
+    margin-bottom: rem(40);
+  }
+}

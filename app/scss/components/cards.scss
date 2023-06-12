@@ -1,0 +1,45 @@
+@use '../util' as *;
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @include breakpoint-down(small) {
+    flex-wrap: wrap;
+  }
+
+  &__container {
+    margin-bottom: rem(20);
+    color: var( --nwcGreen);
+
+    @include breakpoint-down(small) {
+      width: 50%;
+    }
+
+    &--day h2,
+    &--hour h2,
+    &--minute h2,
+    &--second h2 {
+      padding: 0 rem(56);
+      margin-bottom: 0;
+    }
+
+    &--day h3,
+    &--hour h3,
+    &--minute h3,
+    &--second h3  {
+      padding: 0 rem(48);
+      margin-bottom: rem(18)
+    }
+  }
+}
