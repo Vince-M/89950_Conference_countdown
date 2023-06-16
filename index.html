@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=League+Spartan:wght@700;900&display=swap" rel="stylesheet"> 
 
-  <title>Countdown timer</title>
+  <title>WPG 2023 Countdown timer</title>
 
   <!-- import fonts and stylesheet -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -28,23 +28,58 @@
 </head>
 <body>
   <section class="coming-soon">
-    <div class="countdown">
-      <!-- <h1>WPG Conference</h1> -->
-      <img class="wpgLogo" src="img/winterPartnersGathering.svg" width="500" alt="2022 Winter Partnering Gathering logo">
-      <div class="cards">
+    <div class="countdown_id">
+          <img class="wpgLogo" src="img/winterPartnersGathering.svg" width="500" alt="2022 Winter Partnering Gathering logo">
+    </div>
 
-        <div class="cards__container cards__container--day">
-          <h2 class="day">Time</h2>
-          <h3>day</h3>
-        </div> <!-- container-day -->
+    <div class="countdown_pharm">
+      <div class="cards_pharm">
+        <div class="pharm_head">
+          <h2>Pharmacy</h2>
+        </div>
+        <div class="countdown_pharm">
+          <div class="cards">
+            <div class="cards__container cards__container--day">
+              <h2 class="pharmDay">Time</h2>
+              <h3>day</h3>
+            </div> <!-- container-day -->
+    
+            <div class="cards__container cards__container--hour">
+              <h2 class="pharmHour">Time</h2>
+              <h3>hour</h3>
+            </div> <!-- container-hour -->
+          </div>
 
-        <div class="cards__container cards__container--hour">
-          <h2 class="hour">Time</h2>
-          <h3>hour</h3>
-        </div> <!-- container-hour -->
+        </div>
+
 
       </div> <!-- cards -->
-    </div> <!-- countdown -->
+    </div> <!-- countdown_pharm -->
+
+    <div class="countdown_wpg">
+      <div class="cards_wpg">
+        <div class="wpg_head">
+          <h2>WPG</h2>
+        </div>
+        <div class="countdown">
+          <div class="cards">
+    
+            <div class="cards__container cards__container--day">
+              <h2 class="wpgDay">Time</h2>
+              <h3>day</h3>
+            </div> <!-- container-day -->
+    
+            <div class="cards__container cards__container--hour">
+              <h2 class="wpgHour">Time</h2>
+              <h3>hour</h3>
+            </div> <!-- container-hour -->
+    
+          </div> <!-- cards -->
+        </div> <!-- countdown -->
+      </div>
+
+    </div>
+
   </section> <!-- coming-soon -->
 
   <!-- import the js file -->
