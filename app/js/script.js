@@ -17,11 +17,15 @@ const countdownPharm = () => {
   // Calculate time
   const textDay = Math.floor(gap / day);
   const textHour = Math.floor((gap % day) / hour);
+  const textMinute = Math.floor((gap % hour) / minute);
+  const textSecond = Math.floor((gap % minute) / second);
 
   // update the html with the calculated values
   // check if the time is past 0.
-  document.querySelector(".pharmDay").innerText = textDay;
-  document.querySelector(".pharmHour").innerText = textHour;
+  document.querySelector(".pharmDay").innerText = textDay > 0 ? textDay : 0;
+  document.querySelector(".pharmHour").innerText = textHour > 0 ? textHour : 0;
+  document.querySelector(".pharmMinute").innerText = textMinute > 0 ? textMinute : 0;
+  document.querySelector(".pharmSecond").innerText = textSecond > 0 ? textSecond : 0;
 };
 
 countdownPharm();
@@ -43,11 +47,15 @@ const countdownWpg = () => {
   // Calculate time
   const textDay = Math.floor(gap / day);
   const textHour = Math.floor((gap % day) / hour);
+  const textMinute = Math.floor((gap % hour) / minute);
+  const textSecond = Math.floor((gap % minute) / second);
 
   // update the html with the calculated values
   // check if the time is past 0.
-  document.querySelector(".wpgDay").innerText = textDay;
-  document.querySelector(".wpgHour").innerText = textHour;
+  document.querySelector(".wpgDay").innerText = textDay > 0 ? textDay : 0;
+  document.querySelector(".wpgHour").innerText = textHour > 0 ? textHour : 0;
+  document.querySelector(".wpgMinute").innerText = textMinute > 0 ? textMinute : 0;
+  document.querySelector(".wpgSecond").innerText = textSecond > 0 ? textSecond : 0;
 };
 
 countdownWpg();
