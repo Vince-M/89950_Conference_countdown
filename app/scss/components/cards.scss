@@ -36,10 +36,11 @@
     }
 
     &--day h2,
+    &--pharmday h2,
     &--hour h2,
     &--minute h2,
     &--second h2 {
-      padding: 0 rem(56);
+      padding: 0 rem(40);
       margin-bottom: 0;
     }
 

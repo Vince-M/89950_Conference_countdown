@@ -14,11 +14,18 @@ a:active {
 
 
 h2 {
-  font-size: rem(56);
+  font-size: rem(40);
   font-family: var(--font-display);
   color: var(--nwcGreen);
   font-weight: 700;
   margin-bottom: 0;
+}
+
+.pharm_head h2,
+.wpg_head h2 {
+  font-size: rem(56);
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px var(--nwcYellow);
 }
 
 h3 {
