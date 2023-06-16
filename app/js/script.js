@@ -1,12 +1,12 @@
 console.log("hello");
 
-const countdown = () => {
-  // Specify the date and time we are counting down to.
-  const countDate = new Date("Sept 17, 2022 8:00:00").getTime();
+const countdownPharm = () => {
+  const pharmDate = new Date("Sept 16, 2023").getTime();
+  // console.log(pharmDate);
   const now = new Date().getTime();
 
   // calculate remaining time
-  const remainingTime = countDate - now;
+  const gap = pharmDate - now;
 
   // workout the time in days, hours, mins, seconds
   const second = 1000;
@@ -14,18 +14,40 @@ const countdown = () => {
   const hour = minute * 60;
   const day = hour * 24;
 
-  const textDay = Math.floor(remainingTime / day);
-  const textHour = Math.floor((remainingTime % day) / hour);
-  const textMinute = Math.floor((remainingTime % hour) / minute);
-  const textSecond = Math.floor((remainingTime % minute) / second);
+  // Calculate time
+  const textDay = Math.floor(gap / day);
+  const textHour = Math.floor((gap % day) / hour);
 
   // update the html with the calculated values
   // check if the time is past 0.
-  document.querySelector(".day").innerText = textDay > 0 ? textDay : 0;
-  document.querySelector(".hour").innerText = textHour > 0 ? textHour : 0;
-  document.querySelector(".minute").innerText = textMinute > 0 ? textMinute : 0;
-  document.querySelector(".second").innerText = textSecond > 0 ? textSecond : 0;
+  document.querySelector(".pharmDay").innerText = textDay;
+  document.querySelector(".pharmHour").innerText = textHour;
 };
 
-// run the countdown every 500ms to display the time.
-setInterval(countdown, 500);
+countdownPharm();
+
+const countdownWpg = () => {
+  const wpgDate = new Date("Sept 18, 2023").getTime();
+  // console.log(wpgDate);
+  const now = new Date().getTime();
+
+  // calculate remaining time
+  const gap = wpgDate - now;
+
+  // workout the time in days, hours, mins, seconds
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
+
+  // Calculate time
+  const textDay = Math.floor(gap / day);
+  const textHour = Math.floor((gap % day) / hour);
+
+  // update the html with the calculated values
+  // check if the time is past 0.
+  document.querySelector(".wpgDay").innerText = textDay;
+  document.querySelector(".wpgHour").innerText = textHour;
+};
+
+countdownWpg();
