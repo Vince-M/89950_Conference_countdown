@@ -17,6 +17,21 @@
   text-align: center;
 }
 
+.countdown_pharm {
+  
+  @include breakpoint-down(small) {
+    width: 100%;
+  }
+}
+
+.cards_pharm {
+
+  @include breakpoint-down(small) {
+    width: 100%;
+  }
+}
+
+
 .countdown_pharm > .cards {
 
   @include breakpoint-down(small) {
